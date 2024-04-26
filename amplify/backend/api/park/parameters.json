@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "park",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authpark4a32dc3a",
+      "Outputs.UserPoolId"
+    ]
+  }
+}
