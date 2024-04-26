@@ -3,7 +3,7 @@ type S3Object{
   region: String!
   key: String!
 }
-type Park @model @auth(rules: [{allow: public, operations: [read, create]}]) {
+type Park @model @auth(rules: [{allow: owner},{allow: public, operations: [read, create]}]) {
   id: ID!
   name: String!
   image: S3Object!
