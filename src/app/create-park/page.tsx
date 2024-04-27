@@ -50,7 +50,7 @@ function NewPark()  {
   return (
     <div className="h-screen w-screen flex itens-center justify-center p-12">
       <form onSubmit={handleSubmit} className="w-[500px] max-h-[50vh] bg-slate-800 rounded-lg p-6">
-        <h2 className="text-5xl font-bold">Create a Park!</h2>
+        <h2 className="text-5xl font-bold">Add a Photo!</h2>
         <label htmlFor="name">Name</label>
         <input type="text" placeholder="enter your park name here" className="w-full" id="name" value={name} onChange={e => setName(e.target.value)} />
         <label htmlFor="image" className="w-[calc(100%-20px)] h-12 bg-cyan-800 rounded-lg mt-3 flex items-center justify-center text-3xl font-extrabold border border-blue-800">Upload Image</label>
