@@ -20,7 +20,7 @@ export default function Home() {
   useEffect(()=>{getData()},[])
   return (
     <div className="container">
-      <h1> Parks<Link href="/create-park">(Add a Park)</Link> </h1>
+      <h1> Photos <Link href="/create-park">(Add a Photo)</Link> </h1>
 
       <div className="img-grid">
         {parks.map(park => (
